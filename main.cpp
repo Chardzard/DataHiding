@@ -1,5 +1,5 @@
 /*
-  Parke Lovett
+  Parke
   02/09/2023
   Brute Forcing Caesar Cipher
   We will take three messages from the user along with 3 shift values. The first message we will encrypt based on     the key given. The second one we will decrypt based on the key given. The final string we will perform a brute      force attack on it by trying to guess the shift value that was used to encrypt the message
