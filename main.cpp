@@ -85,7 +85,7 @@ int main() {
     int j = 0;
     double our_num = 0;
     for (auto key : alpha_array) {
-        std::cout << "\nKey = " << key << "\t";
+        // std::cout << "\nKey = " << key << "\t";
         for (auto letter : cipher_text) {
             letter = decrypt(letter, i);
             cracked_text += letter;
