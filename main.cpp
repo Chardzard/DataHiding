@@ -190,8 +190,8 @@ int main() {
             index = i;
         }
     }
-    std::cout << "\n" << max_val << "\t" << index << std::endl;
-    std::cout << "\nPart 3 KeyCode: " << index << std::endl;
+    // std::cout << "\n" << max_val << "\t" << index << std::endl;
+    // std::cout << "\nPart 3 KeyCode: " << index << std::endl;
     return 0;
 }
 
