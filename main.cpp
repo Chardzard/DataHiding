@@ -17,11 +17,11 @@ char decrypt(char, int); // Part 3 function
 int main() {
     // Part 1 Encryption
     std::string first_text;
-    //std::cout << "Enter your message to be encrypted here: ";
+    std::cout << "Enter your message to be encrypted here: ";
     std::getline(std::cin, first_text);
     std::string secret_message = "";
     int first_key;
-    //std::cout << "Enter your shift key: ";
+    std::cout << "Enter your shift key: ";
     std::cin >> first_key;
     std::cin.ignore();
     for (auto b : first_text) {
@@ -43,11 +43,11 @@ int main() {
 
     // Part 2 Decryption
     std::string second_text;
-    //std::cout << "Enter message to be decrypted here: ";
+    std::cout << "Enter message to be decrypted here: ";
     std::getline(std::cin, second_text);
     std::string decrypted_message = "";
     int second_key;
-    //std::cout << "Enter your shift number: ";
+    std::cout << "Enter your shift number: ";
     std::cin >> second_key;
     std::cin.ignore();
     for (auto c : second_text) {
@@ -69,7 +69,7 @@ int main() {
 
     // Part 3 Brute Force Attack
     std::string cipher_text;
-    //std::cout << "Enter in the ciphertext you want to crack: ";
+    std::cout << "Enter in the ciphertext you want to crack: ";
     std::getline(std::cin, cipher_text);
     std::string cracked_text = "";
 
@@ -85,7 +85,7 @@ int main() {
     int j = 0;
     double our_num = 0;
     for (auto key : alpha_array) {
-        //std::cout << "\nKey = " << key << "\t";
+        std::cout << "\nKey = " << key << "\t";
         for (auto letter : cipher_text) {
             letter = decrypt(letter, i);
             cracked_text += letter;
@@ -190,7 +190,7 @@ int main() {
             index = i;
         }
     }
-    //std::cout << "\n" << max_val << "\t" << index << std::endl;
+    std::cout << "\n" << max_val << "\t" << index << std::endl;
     std::cout << "\nPart 3 KeyCode: " << index << std::endl;
     return 0;
 }
